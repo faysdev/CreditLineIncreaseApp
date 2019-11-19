@@ -1,4 +1,7 @@
 {
-    "orgName": "vchalem Company",
-    "edition": "Developer"
+    "orgName": "Codey Demo Company",
+    "edition": "Developer",
+    "orgPreferences" : {
+        "enabled": ["S1DesktopEnabled"]
+    }
 }
