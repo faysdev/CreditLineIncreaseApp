@@ -13,8 +13,12 @@ sfdx force:source:push -f
 # Assign permission sets
 sfdx force:user:permset:assign -n Credit_Line_Increase_Demo
 
+#Import Data
+sfdx force:data:tree:import --plan data/Plan1.json
+
+
 # Execute additional steps
 sfdx force:apex:execute -f config/create-demo-data-setup.apex
 
 # Open org
-sfdx force:org:open
+sfdx force:org:open -p /lightning/o/Account/list?filterName=Recent
